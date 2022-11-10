@@ -1,4 +1,4 @@
-# Terminus acme Plugin
+# Terminus ACME Plugin
 
 [![Terminus v2.x - v3.x Compatible](https://img.shields.io/badge/terminus-2.x%20--%203.x-green.svg)](https://github.com/pantheon-systems/terminus-plugin-example/tree/2.x)
 
