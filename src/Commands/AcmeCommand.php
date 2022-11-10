@@ -1,6 +1,6 @@
 <?php
 
-namespace Pantheon\Terminus\Commands;
+namespace C4rlit0\TerminusAcme\Commands;
 
 use Consolidation\OutputFormatters\StructuredData\RowsOfFields;
 use Pantheon\Terminus\Commands\TerminusCommand;
@@ -12,7 +12,7 @@ use Pantheon\Terminus\Site\SiteAwareTrait;
 
 /**
  * Class AcmeCommand
- * @package Pantheon\Terminus\Commands
+ * @package C4rlit0\TerminusAcme\Commands
  */
 class AcmeCommand extends TerminusCommand implements SiteAwareInterface
 {

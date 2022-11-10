@@ -1,5 +1,5 @@
 <?php
-namespace Pantheon\Terminus\Utils;
+namespace C4rlit0\TerminusAcme\Utils;
 
 use GuzzleHttp\Exception\ClientException;
 use Pantheon\Terminus\Collections\Domains;
