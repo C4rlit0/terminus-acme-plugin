@@ -8,7 +8,7 @@ use Pantheon\Terminus\Exceptions\TerminusException;
 use Pantheon\Terminus\Exceptions\TerminusNotFoundException;
 use Pantheon\Terminus\Site\SiteAwareInterface;
 use Pantheon\Terminus\Site\SiteAwareTrait;
-use C4rlit0\TerminusAcme\Utils\GetACMEStatus;,
+use C4rlit0\TerminusAcme\Utils\GetACMEStatus;
 
 /**
  * Class AcmeCommand
