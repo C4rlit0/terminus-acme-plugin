@@ -43,7 +43,7 @@ class AcmeCommand extends TerminusCommand implements SiteAwareInterface
         // Sanity check: this should never happen, as getACMEStatus should throw
         // in any instance where there is no verification file data.
         if (empty($data->{'http-01'})) {
-            throw new TerminusException('No challenge file information available for domain {domain}.', compact('status', 'domain'));
+            throw new TerminusException('No challenge file information available for domain {domain}.', ['domain' => $domain]);
         }
         $data = $data->{'http-01'};
         $filename = $data->token;
@@ -91,7 +91,7 @@ class AcmeCommand extends TerminusCommand implements SiteAwareInterface
       // Sanity check: this should never happen, as getACMEStatus should throw
       // in any instance where there is no verification dns txt record.
       if (empty($data->{'dns-01'})) {
-        throw new TerminusException('No DNS txt record challenge information available for domain {domain}.', compact('status', 'domain'));
+        throw new TerminusException('No DNS txt record challenge information available for domain {domain}.', ['domain' => $domain]);
       }
       $data = $data->{'dns-01'};
       $struct = AcmeCommand::formatAcmeDNStxt($domain, $data);
